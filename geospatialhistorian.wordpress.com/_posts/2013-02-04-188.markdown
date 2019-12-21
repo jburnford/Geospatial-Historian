@@ -1,0 +1,37 @@
+---
+author: cljim22
+comments: true
+date: 2013-02-04 17:05:34+00:00
+layout: post
+link: https://geospatialhistorian.wordpress.com/2013/02/04/188/
+slug: '188'
+title: Using Google Earth as an entry into basic GIS
+wordpress_id: 188
+---
+
+By Daniel Macfarlane and Jim Clifford
+[From the Otter.](http://niche-canada.org/node/10020/)
+In the [first](http://niche-canada.org/node/9890) installation of this series, we discussed how to use basic [Google Maps](http://maps.google.ca/) to create a custom map. You might be surprised to know that, in doing so, you are actually doing GIS mapping (Global Information System - basically, GIS involves merging of cartography, statistical analysis and database technology). I’ll admit I didn’t know that. I asked how I could turn my custom map into a GIS map; Jim told me I already had. So if you have used the custom maps function provided by Google, you are already using a basic form of GIS mapping! 
+
+In this installation, we will discuss [Google Earth](http://www.google.com/earth/index.html), another free and easy option for creating a basic GIS database. Using Google Earth we created a multi-dimensional form of Dan's original St. Lawrence Seaway and Power Project map. 
+
+Converting a custom Google Map to Google Earth is very easy: on the top of a custom map, just click on “View in Google Earth.” A prompt will ask whether you want to open or download the file. Unlike a custom map, which remains stored and saved online, a Google Earth map can be downloaded to your desktop (You can download [Dan's map](http://niche-canada.org/files/googleearthmapofseaway.kml). You'll need a copy of [Google Earth](http://www.google.com/earth/download/ge/agree.html) first, which is free). 
+
+Within a few seconds, you will be looking at your initial map in a three-dimensional space in Google Earth. All the same landmarks and such you already created will still be there. You now have a variety of options. For example, you can now tilt so that you are looking at the earth from an angle, rather than from straight above (like Google Maps, one has the option of “Street View” which simulates the map’s appearance form the perspective of someone standing in front of a landmark). This is a particularly effective way of following the seaway route – start at one end, and go along from about a 45 degree angle. 
+
+Google Earth is a good place to start, as it is effectively GIS-lite software. It provides the option to create custom lines, polygons and points (see the buttons along the top of the map). In GIS these shapes are collectively know as "vectors" and they are one of the main ways we represent geographic features in historical GIS. We trace the roads or railways of old maps using lines, the outlines of building or agricultural fields using polygons and identify particular places or things using points. Google Earth also allows you to attach descriptions to these lines, polygons and points. In the map below, (download sample here) we've added descriptions to a few geographic features of Toronto. This is another key functionality of GIS, the ability to link spatial data with other forms of data. Google Earth limits you to names and basic descriptions and does not allow you to link statistical data or dates, but it still provides a lot of opportunity to build a historical GIS database of the landscape you study. 
+
+![Toronto Waterfront GIS](http://niche-canada.org/files/images/torontogoogleearth.jpg)
+
+
+There is a Historical Imagery” option which will be especially appealing for environmental historians and geographers; however, it is limited to what Google has inn its database (which in the case  of the St. Lawrence Valley, only goes back to 1997). In the region Jim studies, the Lower Lea Valley in East London, Google Earth has a 1945 aerial map.
+
+[![some_text](http://niche-canada.org/files/images/westham1945.jpg)](http://niche-canada.org/files/images/westham1945.jpg)
+
+Another options is “layers”: a huge collection of GIS data included with Google Earth. You'll find these layers located along the sidebar, you have the choice of adding thousands of provided options. Take if from us, you don’t want to turn these all on at the same time, or you will be faced with an overwhelming and jumbled map. These include normal features such as labels, places, roads, pictures, etc., but also allow NASA, National Geographic, etc. These are effectively GIS layers provided by Google and partner organizations and the process of creating maps by adding and removing various layer options will prepare you for how more complex GIS software functions. 
+
+The most useful for historical research and teaching is the [David Rumsey Historical Maps](http://www.davidrumsey.com/) collection (found under the gallery tab) that includes dozens of historical maps "pined" onto their location on the digital globe. However, the user is limited to what is already provided and creating more layers, historical imagery, and such that are specific to one’s project requires the use of more specific GIS software, which will be the subject of the next series of post. There are a lot of options for the United States, but the options for Canada are a bit sparse. 
+
+[![some_text](http://niche-canada.org/files/images/westham1945.jpg)](http://niche-canada.org/files/images/montreal1815.jpg)
+
+In the meantime, if you are a student, staff or faculty member at a university you should ask your map librarian for a trial copy of [ArcGIS](http://www.esri.com/industries/apps/education/offers/promo/index.cfm) and/or download and install [Quantum GIS](http://qgis.org/) (a less powerful, but free, open source GIS package).

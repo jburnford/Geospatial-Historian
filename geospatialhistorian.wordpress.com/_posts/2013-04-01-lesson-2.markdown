@@ -1,0 +1,234 @@
+---
+author: cljim22
+comments: true
+date: 2013-04-01 14:36:51+00:00
+layout: post
+link: https://geospatialhistorian.wordpress.com/?p=6
+published: false
+slug: lesson-2
+title: Lesson 2
+wordpress_id: 6
+---
+
+Lesson 2: Basic QuantumGIS
+
+-in this lesson you will install QGIS software, download geospatial files like shapefiles and GeoTIFFs, and create a map out of a number of vector and raster layers<!-- more -->
+
+**Installing QGIS**
+
+_Mac Instructions_
+
+-choose Master release (the one that has a single installer package)
+
+[![qgismac2](http://geospatialhistorian.files.wordpress.com/2013/02/qgismac2.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/qgismac2.png)
+
+-click on the link and download the following two files (install like any other Mac programs):
+
+-GDAL complete
+
+-GSL framework
+
+-as with any other Mac application you are using for the first time, you will have to go find the QGIS application in Applications
+
+_Windows Instructions_
+
+-under Standalone Installer, click on the link to Download QGIS
+
+[![gis_ms_win](http://geospatialhistorian.files.wordpress.com/2013/02/gis_ms_win.jpg?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/gis_ms_win.jpg)
+
+-double-click on the .exe file to execute
+
+**Finding Data**
+
+_Download PEI shapefiles_
+
+-go to:
+
+http://www.gov.pe.ca/gis/license_agreement.php3?name=nat_parks&file_format=SHP
+
+-read and accept the license agreement, and then download the National Parks of PEI file
+
+**Starting Your GIS Project**
+
+_Project Properties_
+
+Mac:
+
+-File->Project Properties
+
+[![project_prop](http://geospatialhistorian.files.wordpress.com/2013/02/project_prop.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/project_prop.png)
+
+Windows:
+
+Settings-> Project Properties
+
+[![change_CRS_windows](http://geospatialhistorian.files.wordpress.com/2013/02/change_crs_windows.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/change_crs_windows.png)
+
+-select Coordinate Reference System at top
+
+-click Enable ‘on the fly’ CRS transformation button on top left
+
+[![CRS](http://geospatialhistorian.files.wordpress.com/2013/02/crs.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/crs.png)
+
+-in the Filter box enter “2291.” This quickly navigates to the best Coordinate reference system for Prince Edward Island.
+
+-Note: the [Coordinate Reference System](http://en.wikipedia.org/wiki/Spatial_reference_system) (CRS) refers to the map projection. The default is WGS84 (it is increasingly common to use WGS 84 which is compatible with Google Earth type software), but since most of our data and examples are created by Canadian governments we recommend using NAD 83 (North American Datum, 1983).  For more on NAD 83 and the Federal Government's datum, see [NRCan's website](http://www.nrcan.gc.ca/earth-sciences/geography-boundary/mapping/topographic-mapping/10272).  PEI has its own NAD 83 coordinate reference system which uses a [Double Stereographic projection](http://www.gov.pe.ca/gis/index.php3?number=77865&lang=E).
+
+-under the box titled Coordinate reference systems of the world, select “Prince Edward Isl. (Stereographic)” and hit OK
+
+-notice the projection has changed in the bottom right corner of the QGIS window.  Next to that you will see the geographic location of your mouse pointer in metres
+
+-under File menu, select Save Project (you should save your project after each step)
+
+**Building a Base Map**
+
+Now that your computer is driving with the right directions, it's time to add some information that makes sense to humans.  Your project should start with a base map, or a selection of geospatial information that lets your readers recognize real world features on the map.  For most users this will comprise of several "layers" of vector and raster data, which can be rearranged, coloured, and labeled in such a way that they make sense to your readers and your project's objectives.
+
+A relatively new feature on many GIS programs is the availability of pre-fab base maps, but since this technology is under development on open source platforms like QGIS we will walk through the process of adding vector and raster layers in this module.
+
+Note: for those who would like to add pre-fab base maps to QGIS, you can try installing the "OpenLayers" Plugin under Plugins->Fetch Python Plugins (enter "OpenLayers" in the Filter box).  At the time of writing this module, the OpenLayers plugin (v. 1.1) installed but failed to work properly on any Mac using OSX.  It appears to work much better on QGIS installed on Windows 7.
+
+**Opening Vectors**
+
+Vectors [defined](http://www.uoguelph.ca/ruralhistory/resources/GISindex.html): GIS uses points, lines, and polygons, also known as **vector** data. Its first order of work is to arrange these and project them accurately on maps. Points may be towns or telephone poles; lines could represent rivers or railroads; and polygons could encompass a farmer’s lot or larger political boundaries. However, it is also possible to attach historical data to these geographical places and study how people interacted with and changed their physical environments. The population of towns changed, rivers changed their courses, lots were subdivided, and land was planted with various crops.
+
+-under Layer on toolbar, choose Add Vector Layer (alternatively the same icon you see next to “Add Vector Layer” can also be selected from tool bar)
+
+[![vector_button](http://geospatialhistorian.files.wordpress.com/2013/02/vector_button.png)](http://geospatialhistorian.files.wordpress.com/2013/02/vector_button.png)
+
+-click Browse, find your downloaded Prince Edward Island shapefiles in the folder
+
+-_shapefile _is one of the standard file formats in GIS. **
+**
+
+-select line_polygon
+
+[![first_coastline_map](http://geospatialhistorian.files.wordpress.com/2013/02/first_coastline_map.jpg?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/first_coastline_map.jpg)
+
+-double-click coastline_polygon
+
+-click Style along top, click “change” (with wrench icon)
+
+[![style_change](http://geospatialhistorian.files.wordpress.com/2013/02/style_change.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/style_change.png)
+
+-for Fill style select “No Brush”
+
+[![no_brush](http://geospatialhistorian.files.wordpress.com/2013/02/no_brush.jpg?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/no_brush.jpg)
+
+-click OK, click OK
+
+-under Layer on toolbar, choose Add Vector Layer (alternatively the same icon you see next to “Add Vector Layer” can also be selected from tool bar)
+
+-click Browse, find your downloaded Prince Edward Island shapefiles in the folder
+
+-select "PEI HYDRONETWORK"
+
+-double-click on "PEI HYDRONETWORK"
+
+-select Style tab, and choose an appropriate blue to color the hydronetwork (it is possible that this may have been blue automatically).
+
+[![river_blue](http://geospatialhistorian.files.wordpress.com/2013/02/river_blue.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/river_blue.png)
+
+-click Browse, find your downloaded Prince Edward Island shapefiles in the folder
+
+-select “1935 inventory_region”
+
+-right click and Open Attribute Table
+
+[![open_attribute_table](http://geospatialhistorian.files.wordpress.com/2013/02/open_attribute_table.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/open_attribute_table.png)
+
+-an Attribute Table will open. It has a number of categories and identifiers. Of particular interest is the LANDUSE category which provides information on the forest cover in 1935. We will now show you how to display these categories on the map.
+
+[![OpenAtrribute](http://geospatialhistorian.files.wordpress.com/2013/02/openatrribute.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/openatrribute.png)
+
+-click Style along top, click on “Single Symbol” on top left and select “Categorized”
+
+-beside Column choose “Landuse”
+
+-under Color ramp choose Greens
+
+-click Classify
+
+-in Symbol Column, choose the furthest down dark green square (with no value beside it) and hit the “Delete” button; also delete the Developed category, as we want to highlight forested areas
+
+[![forest_types_after_delete](http://geospatialhistorian.files.wordpress.com/2013/02/forest_types_after_delete.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/forest_types_after_delete.png)
+
+-in Layers window, click on the little arrow beside 1935_inventory_region to view the legend
+
+-under Layer on toolbar, choose Add Vector Layer
+
+-click Browse, find your downloaded Prince Edward Island shapefiles in the folder
+
+-select “PEI_highway”
+
+-click Style along top, click on “Single Symbol” on top left and select “Categorized”
+
+-beside Column choose “TYPE”
+
+-click Classify
+
+-in Symbol Column, choose symbol beside “primary” choose the dotted red line under Saved styles
+
+[![red_roads](http://geospatialhistorian.files.wordpress.com/2013/02/red_roads.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/red_roads.png)
+
+-repeat for primary link
+
+-click Symbol beside secondary and change color to black and width to 0.7
+
+-repeat for secondary link
+
+-click OK
+
+-under Layer on toolbar, choose Add Vector Layer
+
+-click Browse, find your downloaded Prince Edward Island shapefiles in the folder
+
+-select “PEI_placenames”
+
+-double click on PEI_placenames
+
+-choose Labels tab at top, click Display labels, in Field containing label select Placenames
+
+[![label](http://geospatialhistorian.files.wordpress.com/2013/02/label.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/label.png)
+
+-Change the Placement to "Below Right"
+
+-Change Font size to "18"
+
+-Labelling is where QGIS falls well short of real cartography - it will take considering tinkering to adjust settings to display the detail desired for a presentation. Try changing the different settings to see how symbols and displays change.
+
+**_-to add: you can toggle in and out of these, can add and remove, zoom in and out, how to save,_ **
+
+-check the box beside prince_edward_island_highway in the Layers window
+
+-right click prince_edward_island_highway and selected Properties, select Style (furthest left menu), click on Single Symbol and selected Categorized
+
+-click Classify button and we are going to select the main road to have them stand out.
+
+-in the list of road types double-click on “primary” and a box will appear. In this box you can change many things, but for now we will just make the width 2.0
+
+-change the widths as follows: primary_link (1.5), secondary (1), secondary_link (0.75)
+
+-having created a map using vector layers, we will now add or use our first raster layer.
+
+**Opening Rasters**
+
+Raster defined: **raster** data are digital images made up of grids. All remote sensing data such as satellite image or air photos are rasters, but usually you can't see the grids in these images because they are made up of tiny pixels.  Each pixel has its own value and when those values are symbolized in colour or greyscale they make up an image that is useful for display or topographical analysis.  A scanned historical map is also brought into GIS in raster format.
+
+**-tell them to download: "PEI_CumminsMap1927.tif"**
+
+-under Layer on toolbar, choose Add Raster Layer (alternatively the same icon you see next to “Add Raster Layer” can also be selected from tool bar)
+
+[![raster](http://geospatialhistorian.files.wordpress.com/2013/02/raster.png)](http://geospatialhistorian.files.wordpress.com/2013/02/raster.png)
+
+-find the file you have downloaded titled "PEI_CumminsMap1927.tif"
+
+-you will be prompted to define this layer's coordinate system. In the Filter box search for "2291", then in the box below select "NAD83(CSRS98) / Prince Edward Isl. (Stereographic)..."
+
+[![defineCRS](http://geospatialhistorian.files.wordpress.com/2013/02/definecrs.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/definecrs.png)
+
+-Now we would like to make the coastline more visible, so double-click on coastline_polygon, select Style, click the Change button (with wrench), in the following window change Border color to Red, increase Border to 0.5, click OK.
+
+[![cummins_map_1927](http://geospatialhistorian.files.wordpress.com/2013/02/cummins_map_1927.png?w=300)](http://geospatialhistorian.files.wordpress.com/2013/02/cummins_map_1927.png)
+
+Make sure you save your work.

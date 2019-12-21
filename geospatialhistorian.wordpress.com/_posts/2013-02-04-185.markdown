@@ -1,0 +1,47 @@
+---
+author: cljim22
+comments: true
+date: 2013-02-04 16:49:09+00:00
+layout: post
+link: https://geospatialhistorian.wordpress.com/2013/02/04/185/
+slug: '185'
+title: 'Learning GIS: A Google Seaway Map'
+wordpress_id: 185
+---
+
+_By Dan Macfarlane and Jim Clifford_
+[From the Otter.](http://niche-canada.org/node/9890)
+
+
+
+This is the first of series exploring my metamorphosis, under the tutelage of Jim Clifford, from a digital mapping neophyte to a master mapper … or, to appropriate a title from quintessential Cold War film, this could be called “Dr. Macfarlane or: How I Learned to Stop Worrying and Love GIS Maps.” 
+
+
+
+
+I did my dissertation on the history of the St. Lawrence Seaway and Power Project and, as one might expect, encountered a great deal of maps and engineering studies along the way. I wished I could somehow usefully bring together or juxtapose all this spatial and geographical information, not only for my own benefit but for others who might be interested. I had used Google Maps many times, albeit for run-of-the-mill purposes, and had even made a few custom maps (e.g. to give directions to guests at our wedding) but the type of a multi-layered and interactive mapping I envisioned for my St. Lawrence research seemed well beyond my capabilities. Throw in the demands of a new baby and a dissertation to finish, and the idea was effectively shelved. 
+
+
+
+
+But as I saw others in NiCHE producing excellent GIS mapping projects, I kept wondering if I could do it. With some down time after my defence I randomly opened Google Maps one afternoon and started exploring the custom maps feature. Pretty soon I had marked off the main seaway channel, and quickly found that I could use anchors and signs to designate key points of interests and different features. 
+
+
+
+
+Over the following few days, I came back to this custom map when I had a few moments, and began to add text, maps, and pictures to the various points of interest. Then I started tracking the lines of older canals which the seaway had replaced. In just a few combined hours, I had essentially produced the map you see in this posting. I conversed with Jim and Sean Kheraj about the map, and they gave me encouragement and advice (such as viewing this map in Google Earth, which will be the subject of the next posting in this series).  
+
+
+
+
+The whole process was quick and user-friendly, and done from my couch with various football and hockey games going on in the background. I am most certainly no computer expert – when someone refers to java script I’m hoping they are going to serve me a cappuccino. I had taken a first-year computer science course over a decade ago but if I remember correctly, the major assignment was creating a website for a virtual golf course. And I forgot everything I had learned in that class anyway – I just remember typing a bunch of 0s and 1s. Bottom line: if you are computer literate enough to be reading this post, you can probably create a custom Google map. 
+
+
+
+
+[googlemaps https://maps.google.ca/maps/ms?ie=UTF8&hl=en&msa=0&msid=205929035855498240131.00049c08869a03cc5ea0d&t=h&ll=45.644768,-75.981445&spn=12.289866,30.761719&z=5&output=embed&w=700&h=400]
+
+
+
+
+In the next post we will show you how to make a map like Dan's Seaway Map and explore how to view this map in Google Earth.
