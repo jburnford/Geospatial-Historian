@@ -1,37 +1,8 @@
-## Welcome to GitHub Pages
+## Welcome to the Geospatial Historian on Github
 
-You can use the [editor on GitHub](https://github.com/jburnford/geospatialhistorian/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The Geospatial Historian is a tutorial-based open access textbook for historical scholars and digital humanists edited by Jim Clifford and Josh MacFadyen. It is designed to teach practical digital mapping and GIS skills that are immediately useful to real research needs.
 
-### Markdown
+We published a first series of four introductory lessons to HGIS methods using open source or free platforms like Google Maps and QGIS with the Programming Historian in 2013. We have a second series of lessons using ArcGIS developed by Geoff Cunfer for classroom use and graduate student training and then revised for the web by Louis-Jean Faucher with contributions from Jessica DeWitt and Patrick Chassé.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/jburnford/geospatialhistorian/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+We are now looking for more contributions on intermediate and advanced HGIS methods. Please contact jim.clifford@usask.ca if you would like to join the project team.
